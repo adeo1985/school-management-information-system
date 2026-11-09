@@ -1,0 +1,16 @@
+<?php
+
+// Open or create the file in write mode
+$myfile = fopen("students.txt", "w") or die("Unable to open file!");
+
+// Write student information
+fwrite($myfile, "101, Akariza Miriam\n");
+fwrite($myfile, "102, Akayezu Jean d'Amour\n");
+fwrite($myfile, "103, Dukuzemariya Chantal\n");
+
+// Close the file
+fclose($myfile);
+
+echo "Students' information saved successfully!";
+
+?>
